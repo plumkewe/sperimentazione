@@ -17,6 +17,14 @@ header h1 {
     background-color: black;
 }
 
+header p {
+    text-align: center;
+    padding: 10px 10px;
+    color: #ff006e;
+    background-color: yellow;
+    margin-bottom: 10px;
+}
+
 
 body {
     background-color: black;
