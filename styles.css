@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Dela Gothic One', serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+header h1 {
+    text-align: center;
+    padding: 10px 10px;
+    color: #ff006e;
+    background-color: black;
+}
+
+
+body {
+    background-color: black;
+}
+
+img {
+    pointer-events: none;
+}
+
+
+#horizontally-scrollable-list {
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+}
+
+.list-container {
+    display: flex;
+}
+
+#horizontally-scrollable-list::-webkit-scrollbar {
+    display: none;
+}
+
+.list-item {
+    height: 200px;
+    width: 200px;
+
+    margin-right: 10px;
+    text-align: center;
+    
+    color: aqua;
+    border: solid purple 2px;
+    
+    border-radius: 10px;
+}
+
+.list-container:first-child {
+    margin-left: 10px;
+}
+
+.list-item img {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+/* https://codepen.io/P1N2O/pen/pyBNzX copiato */
+.fancy-card {
+    background: linear-gradient(-45deg, #fcf4df, #efb7ea, #d66fee);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    box-shadow: 3px 3px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.fancy-card:hover {
+    animation: gradient 2s ease infinite;
+    box-shadow: 3px 3px yellow;
+}
+
+footer p {
+    padding: 10px 10px;
+    background-color: white;
+    color: black;
+    height: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
