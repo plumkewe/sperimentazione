@@ -56,7 +56,7 @@ body {
 
 .card h2 {
     padding: 10px;
-    font-size: 25px;
+    font-size: 1.5rem;
     float: left; /* !!! */
 }
 
@@ -70,7 +70,7 @@ body {
     color: black;
     
     
-    font-size: 20px;
+    font-size: 1.5rem;
 /*  display: block;*/
     text-align: right;
     float: right; /* !!! */
@@ -92,4 +92,19 @@ body {
 .card:hover .card-image {
     transition: filter 1s ease;
     filter: brightness(0.7);
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%; 
+    }
+    
+    .card-image {
+        height: 120px; 
+    }
+    
+    h1, h2, p, a {
+        font-size: 3rem;
+    }
 }
