@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: flex-start;
+}
+
+.card {
+    background-color: purple;
+    width: 300px;
+}
+
+
+.card-image {
+    height: 100px;
+    
+    background-size: cover;
+    
+}
+
+.container .card:first-child .card-image {
+    background-image: url(pattern1.png);
+}
+
+.container .card:nth-child(2) .card-image {
+    background-image: url(pattern2.png);
+}
+
+.container .card:nth-child(3) .card-image {
+    background-image: url(pattern3.png);
+}
+
+.container .card:nth-child(4) .card-image {
+    background-image: url(pattern4.png);
+}
+
+.container .card:first-child {
+    background-color: #613834;
+    color: #DE8472;
+}
+
+
+.card h2 {
+    padding: 10px;
+    font-size: 25px;
+    float: left; /* !!! */
+}
+
+/*.card p {*/
+/*  padding: 10px;*/
+/*}*/
+
+
+.card a {
+/*  background-color: lime;*/
+    color: black;
+    
+    
+    font-size: 20px;
+/*  display: block;*/
+    text-align: right;
+    float: right; /* !!! */
+    
+    text-decoration: none;
+}
+
+.card:hover {
+    background-color: white;
+    color: #48221F;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.card:hover .card-image {
+    transition: filter 1s ease;
+    filter: brightness(0.7);
+}
