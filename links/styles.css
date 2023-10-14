@@ -11,34 +11,42 @@
     user-select: none;
 }
 
+header h1 {
+    font-size: 60px;
+}
+
 .container {
     width: 100%;
 }
 
-.block {
+.social-list {
+    list-style: none;
+    padding: 0;
+}
+
+.social-item {
     border: solid orange 10px;
     align-items: center;
     display: flex;
-    
     background-color: grey;
 }
 
-.block:first-child {
+.social-item:first-child {
     border: solid #90030c 10px;
     background-color: #ee0f0f;
 }
 
-.block:first-child .icon {
-    background-color: #ecb7b7;
+.social-item:first-child .icon {
+    background-image: url("https://source.unsplash.com/featured/100x100");
 }
 
-.block .link {
+.social-item .link {
     flex: 1;
 }
 
-.block .link h1 {
+.social-item .link h1 {
     text-align: left;
-    padding-left: 10px;
+    padding-left: 50px;
 }
 
 .icon {
